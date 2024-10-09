@@ -3,16 +3,113 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /*color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #242424; */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  --primary-red: #E50914;
+  --primary-bg-color: #000000;
+  --typography-white: #FFFFFF;
+  --typography-gray: #757575;
+  --typography-light-gray: #8C8C8C;
+  --typography-lightest-gray:#999999;
+  --accent-blue: #0071EB;
+  --accent-orange: #FFA00A;
+  --accent-green: #5FA53F;
+  --secondary-bg-color: #222222;
+}
+/*
+.signika-<uniquifier> {
+  font-family: "Signika", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "GRAD" 0;
+} */
+
+body {
+  font-family:"Signika", serif;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: normal;
+  letter-spacing: normal;
+  background-color: var(--primary-bg-color);
+  color:var(--typography-white);
 }
 
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: -0.5%;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.1;
+  letter-spacing: -1%;
+}
+
+h3 {
+  font-weight: normal;
+  font-size: 1.6rem;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.primary-button {
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: normal;
+  letter-spacing: 0.1%;
+}
+
+.secondary-button, 
+.text-field,
+.lead {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.subtitle {
+  font-weight:500;
+  font-size: 19px;
+  line-height: normal;
+  letter-spacing: 0.5%;
+}
+
+.error {
+  font-weight: normal;
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.label {
+  font-weight: bold;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.link {
+  font-weight: normal;
+  font-size: 13px;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+
+/*
 a {
   font-weight: 500;
   color: #646cff;
@@ -93,4 +190,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WitFlix's Design System</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <h1>🌈COLOR SYSTEM<span style="display: inline-block; transform: rotateY(180deg);">🌈</span></h1>
+    <section>
+        <div class="main-colors">
+            <div>
+                <h2 style="margin-top: 3rem; margin-bottom: 2rem;">Primary Red</h2>
+                <div class="red">Red</div>
+            </div>
+            
+            <div style="padding-left: 5rem;">
+                <h2 style="margin-top: 3rem; margin-bottom: 2rem;">Primary Black</h2>
+                <div class="black">Black</div>
+            </div>
+        </div>
+
+        <div>
+            <h2 style="margin-bottom: 2rem;">Typography Colors</h2>
+            <div class="typography-colors">
+                <div class="white"> White <br> #FFFFFF</div>
+                <div class="gray"> Gray <br> #757575</div>
+                <div class="l-gray"> Light Gray <br> #8C8C8C</div>
+                <div class="lt-gray"> Lightest Gray <br> #999999</div>
+            </div>
+        </div>
+
+        <div>
+            <h2 style="margin-bottom: 2rem;">Accent Colors</h2>
+            <div class="accent-colors">
+                <div class="blue">Blue <br> #0071EB</div>
+                <div class="orange">Orange <br> #FFA00A</div>
+                <div class="green">Green <br> #5FA53F</div>
+            </div>
+        </div>
+
+        <div>
+            <h2 style="margin-bottom: 2rem;">Background Color</h2>
+            <div class="bg-colors">
+                <div class="bg-black"> Black <br> #000000</div>
+                <div class="bg-foggy-black"> Foggy Black <br> #222222</div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        body {
+            background-color: var(--primary-red);
+            text-align: center;
+        }
+
+        h1 {
+            padding: 2rem 0;
+            
+        }
+
+        section {
+            background-color: var(--primary-bg-color);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1rem solid var(--primary-red);
+        }
+
+/* ------|   Main colors   |------*/
+        .main-colors {
+            display: flex;
+            justify-content: left;
+            margin-bottom: 5rem;
+        }
+        
+        .red {
+            background-color: var(--primary-red);
+            width: 30rem;
+            height: 15rem;
+            padding-top: 6.5rem;
+        }
+
+        .black {
+            border: 1px solid var(--typography-white);
+            width: 30rem;
+            height: 15rem;
+            padding-top: 6.5rem;
+        }
+
+
+/* ------|   Typography colors   |------*/
+
+        .typography-colors {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5rem;
+        }
+
+        .white {
+            background-color: var(--typography-white);
+            color: var(--primary-bg-color);
+            width: 10rem;
+            height: 10rem;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding-top: 3rem;
+        }
+
+        .gray {
+            background-color: var(--typography-gray);
+            color: var(--primary-bg-color);
+            width: 10rem;
+            height: 10rem;
+            padding-top: 3rem;
+        }
+
+        .l-gray{
+            background-color: var(--typography-light-gray);
+            color: var(--primary-bg-color);
+            width: 10rem;
+            height: 10rem;
+            padding-top: 3rem;
+        }
+
+        .lt-gray{
+            background-color: var(--typography-lightest-gray);
+            color: var(--primary-bg-color);
+            width: 10rem;
+            height: 10rem;
+            padding-top: 3rem;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+
+/* ------|   Accent colors   |------*/
+        .accent-colors{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5rem;
+        }
+        .blue{
+            background-color: var(--accent-blue);
+            color: var(--typography-white);
+            width: 10rem;
+            height: 10rem;
+            padding-top: 3rem;
+        }
+    
+        .orange {
+            background-color: var(--accent-orange);
+            color: var(--typography-white);
+            width: 10rem;
+            height: 10rem;
+            padding-top: 3rem;
+        }
+
+        .green{
+            background-color: var(--accent-green);
+            color: var(--typography-white);
+            width: 10rem;
+            height: 10rem;
+            padding-top: 3rem;
+        }
+        
+/* ------|   Background colors   |------*/
+        .bg-colors {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5rem;
+        }
+        .bg-black{
+            background-color: var(--primary-bg-color);
+            color: var(--typography-white);
+            width: 10rem;
+            height: 10rem;
+            padding-top: 3rem;
+            border: 1px solid var(--typography-white);
+        }
+
+        .bg-foggy-black{
+            background-color: var(--secondary-bg-color);
+            color: var(--typography-white);
+            width: 10rem;
+            height: 10rem;
+            padding-top: 3rem;
+        }
+        
+    </style>
+  </body>
+</html>
