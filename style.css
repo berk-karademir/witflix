@@ -22,6 +22,7 @@
   --accent-orange: #FFA00A;
   --accent-green: #5FA53F;
   --secondary-bg-color: #222222;
+  --border-radius: 0.4rem;
 }
 /*
 .signika-<uniquifier> {
@@ -42,7 +43,7 @@ body {
   background-color: var(--primary-bg-color);
   color:var(--typography-white);
 }
-
+/* ----- TYPOGRAPHY TABLE -----*/
 h1 {
   font-weight: bold;
   font-size: 3rem;
@@ -107,6 +108,51 @@ h3 {
   line-height: normal;
   letter-spacing: normal;
 }
+
+/*--------- BUTTONS -------*/
+.primary-button,
+button {
+  font-size: 1.2rem;
+  letter-spacing: 0.1%;
+  background-color:var(--typography-white);
+  color: var(--primary-bg-color);
+  border-radius: var(--border-radius);
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  align-items: center;
+}
+
+.secondary-button {
+  background-color: var(--typography-gray);
+  color:var(--typography-white);
+}
+
+.service-code-button {
+  font-size: 1rem;
+  background:transparent;
+  border-radius: 0;
+  border: 1px solid var(--typography-gray);
+  color: var(--typography-gray);
+}
+
+.primary-button:hover,
+.secondary-button:hover,
+.service-code-button:hover {
+  scale: 120%;
+  transition: ease-in 150ms;
+}
+
+.secondary-button:hover {
+  background-color: var(--typography-lightest-gray);
+}
+
+.service-code-button:hover {
+  border: 1px solid var(--typography-white);
+  color: var(--typography-white);
+}
+
 
 
 /*
