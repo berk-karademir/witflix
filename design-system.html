@@ -13,7 +13,7 @@
   </head>
   <body>
     <h1>🌈COLOR SYSTEM<span style="display: inline-block; transform: rotateY(180deg);">🌈</span></h1>
-    <section>
+    <section class="color-system">
         <div class="main-colors">
             <div>
                 <h2 style="margin-top: 3rem; margin-bottom: 2rem;">Primary Red</h2>
@@ -53,27 +53,151 @@
             </div>
         </div>
     </section>
-    
+<!------------ TYPOGRAPHY TABLE ------------->
+    <h1>🔤TYPOGRAPHY (Font Family: Signika)</h1>
+    <section class="typography">
+        
+        
+        <table>
+            
+            <tr>
+                <td>Type Style</td>
+                <td>Font Weight</td>
+                <td>Font Size</td>
+                <td>Line Height</td>
+                <td>Letter Spacing</td>
+            </tr>
+
+            <tr>
+                <td>H1 - Netflix</td>
+                <td>Bold</td>
+                <td>3rem</td>
+                <td>1.1</td>
+                <td>-0.5%</td>
+            </tr>
+
+            <tr>
+                <td>H2 - Netflix</td>
+                <td>Bold</td>
+                <td>2rem</td>
+                <td>1.1</td>
+                <td>-1%</td>
+            </tr>
+
+            <tr>
+                <td>H3 - Netflix</td>
+                <td>Regular</td>
+                <td>1.6rem</td>
+                <td>Auto</td>
+                <td>-1%</td>
+            </tr>
+
+            <tr>
+                <td>Primary Button - Netflix</td>
+                <td>Regular</td>
+                <td>1.2rem</td>
+                <td>Auto</td>
+                <td>0.1%</td>
+            </tr>
+
+            <tr>
+                <td>Secondary Button - Netflix &nbsp;</td>
+                <td>Regular</td>
+                <td>16px</td>
+                <td>Auto</td>
+                <td>0%</td>
+            </tr>
+
+            <tr>
+                <td>Body - Netflix</td>
+                <td>Regular</td>
+                <td>26px</td>
+                <td>Auto</td>
+                <td>0%</td>
+            </tr>
+
+            <tr>
+                <td>Text Field - Netflix</td>
+                <td>Regular</td>
+                <td>16px</td>
+                <td>Auto</td>
+                <td>0%</td>
+            </tr>
+
+            <tr>
+                <td>Lead - Netflix</td>
+                <td>Regular</td>
+                <td>16px</td>
+                <td>Auto</td>
+                <td>0%</td>
+            </tr>
+
+            <tr>
+                <td>Subtitle - Netflix</td>
+                <td>Medium</td>
+                <td>19px</td>
+                <td>Auto</td>
+                <td>0.5%</td>
+            </tr>
+            
+            <tr>
+                <td>Error - Netflix</td>
+                <td>Regular</td>
+                <td>15px</td>
+                <td>Auto</td>
+                <td>0%</td>
+            </tr>
+
+            <tr>
+                <td>Label - Netflix</td>
+                <td>Bold</td>
+                <td>13px</td>
+                <td>Auto</td>
+                <td>0%</td>
+            </tr>
+
+            <tr>
+                <td>Link - Netflix</td>
+                <td>Regular</td>
+                <td>13px</td>
+                <td>Auto</td>
+                <td>0%</td>
+            </tr>
+        </table>
+    </section>
     <style>
+    /* kesen eksende hizalı => section'u sil bunu yapıştır  !!!!!!!!!!
+
+        section {
+            background-color: var(--primary-bg-color);
+            border: 1rem solid var(--primary-red);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, h2 {
+            text-align: center;
+        } */
+
+
+
+/* ------|   Main colors   |------*/
         body {
             background-color: var(--primary-red);
-            text-align: center;
+            
         }
 
-        h1 {
-            padding: 2rem 0;
-            
+        body h1 {
+            padding: 2rem 5rem;
         }
 
         section {
             background-color: var(--primary-bg-color);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             border: 1rem solid var(--primary-red);
+            padding-left: 5rem;
         }
+       
 
-/* ------|   Main colors   |------*/
         .main-colors {
             display: flex;
             justify-content: left;
@@ -99,7 +223,6 @@
 
         .typography-colors {
             display: flex;
-            justify-content: center;
             margin-bottom: 5rem;
         }
 
@@ -121,7 +244,7 @@
             padding-top: 3rem;
         }
 
-        .l-gray{
+        .l-gray {
             background-color: var(--typography-light-gray);
             color: var(--primary-bg-color);
             width: 10rem;
@@ -129,7 +252,7 @@
             padding-top: 3rem;
         }
 
-        .lt-gray{
+        .lt-gray {
             background-color: var(--typography-lightest-gray);
             color: var(--primary-bg-color);
             width: 10rem;
@@ -141,12 +264,12 @@
 
 
 /* ------|   Accent colors   |------*/
-        .accent-colors{
+        .accent-colors {
             display: flex;
-            justify-content: center;
             margin-bottom: 5rem;
         }
-        .blue{
+
+        .blue {
             background-color: var(--accent-blue);
             color: var(--typography-white);
             width: 10rem;
@@ -162,7 +285,7 @@
             padding-top: 3rem;
         }
 
-        .green{
+        .green {
             background-color: var(--accent-green);
             color: var(--typography-white);
             width: 10rem;
@@ -173,10 +296,11 @@
 /* ------|   Background colors   |------*/
         .bg-colors {
             display: flex;
-            justify-content: center;
             margin-bottom: 5rem;
+
         }
-        .bg-black{
+        
+        .bg-black {
             background-color: var(--primary-bg-color);
             color: var(--typography-white);
             width: 10rem;
@@ -185,14 +309,44 @@
             border: 1px solid var(--typography-white);
         }
 
-        .bg-foggy-black{
+        .bg-foggy-black {
             background-color: var(--secondary-bg-color);
             color: var(--typography-white);
             width: 10rem;
             height: 10rem;
             padding-top: 3rem;
         }
+
+        div div *:not(h2):not(h3):not(h4):not(h5):not(h6) {
+        text-align: center; 
+        }
+
+/* ------|   Typography Table  |------*/
+        .typography {
+            background-color: var(--primary-bg-color);
+            border: 1rem solid var(--primary-red);
+            
+        }
+    
+        table {
+            border-spacing: 0;
+            background-color: var(--primary-bg-color);
+            /* display: flex;
+            justify-content: center; */
+        }
         
+        table tr:nth-child(2n) {
+            background-color: var(--secondary-bg-color);
+            
+        }
+        
+        table td:nth-child(n+2) {
+            text-align: center;
+        }
+
+        table td {
+            padding: 2rem 5rem;
+        }
     </style>
   </body>
 </html>
