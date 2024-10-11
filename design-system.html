@@ -14,22 +14,24 @@
   <body>
     <!------------ COLOR SYSTEM ------------>
     <!------------ Main Colors ------------->
-    <h1 style="padding: 2rem 5rem;">🌈COLOR SYSTEM<span style="display: inline-block; transform: rotateY(180deg);">🌈</span></h1>
-    <section class="color-system">
-        <div class="main-colors">
-            <div>
-                <h2 style="margin-top: 3rem; margin-bottom: 2rem;">Primary Red</h2>
-                <div class="red">Red</div>
+    
+    <section class="wf-ds">
+        <section class="color-system">
+            <h1>🌈COLOR SYSTEM<span style="display: inline-block; transform: rotateY(180deg);">🌈</span></h1>
+            <div class="main-colors">
+                <div>
+                    <h2>Primary Red</h2>
+                    <div class="red">Red</div>
+                </div>
+                
+                <div style="padding-left: 5rem;">
+                    <h2>Primary Black</h2>
+                    <div class="black">Black</div>
+                </div>
             </div>
-            
-            <div style="padding-left: 5rem;">
-                <h2 style="margin-top: 3rem; margin-bottom: 2rem;">Primary Black</h2>
-                <div class="black">Black</div>
-            </div>
-        </div>
 <!------------ Typography Colors ------------->
         <div>
-            <h2 style="margin-bottom: 2rem; padding-left: 5rem;">Typography Colors</h2>
+            <h2>Typography Colors</h2>
             <div class="typography-colors">
                 
                 <div class="white"> 
@@ -49,7 +51,7 @@
         </div>
 <!------------ Accent Colors ------------->
         <div>
-            <h2 style="margin-bottom: 2rem; padding-left: 5rem;">Accent Colors</h2>
+            <h2>Accent Colors</h2>
             <div class="accent-colors">
                 <div class="blue">
                     <p style="background-color: var(--typography-white); 
@@ -87,7 +89,7 @@
         </div>
 <!------------ Background Colors ------------->
         <div>
-            <h2 style="margin-bottom: 2rem; padding-left: 5rem;">Background Color</h2>
+            <h2>Background Color</h2>
             <div class="bg-colors">
                 <div class="bg-black"> 
                     <p style="background-color: var(--typography-white); 
@@ -104,11 +106,11 @@
         </div>
     </section>
 <!------------ TYPOGRAPHY TABLE ------------->
-    <h1 style="padding: 2rem 5rem;">🔤TYPOGRAPHY</h1>
+
     <section class="typography">
-        
+        <h1 style>🔤TYPOGRAPHY</h1>
         <table>
-            <p style="padding: 5rem 10rem;">Typeface: Signika <br>
+            <p style="padding: 5rem 20rem;">Typeface: Signika <br>
              Source: https://fonts.google.com/specimen/Signika </p>
            
             <tr>
@@ -120,7 +122,7 @@
             </tr>
 
             <tr>
-                <td> <h1>H1 - Netflix</h1> </td>
+                <td> <h1 style="background:none;">H1 - Netflix</h1> </td>
                 <td>Bold</td>
                 <td>3rem</td>
                 <td>1.1</td>
@@ -233,46 +235,71 @@
         </table>
     </section>
 <!------------ BUTTONS ------------->
-    <section style="padding-left: 2rem; padding-bottom: 2rem;">
-        <h1 style="padding: 2rem 5rem;">🧑🏻‍💻UI & UX Components</h1>
+<h1>🧑🏻‍💻UI & UX Components</h1>
+    <section class="buttons">
+        <div>
+            <br>
             <button class="primary-button"> <img src="icon-play.svg">Play</button>
             <br>
             <button class="secondary-button"> <img src="icon-info.svg">More info</button>
             <br>
             <button class="exceptional-button">Service Code</button>
             <button>class verilmemiş buton; css yazmadım aralara br attım, bunun üstünde br yok</button>
+        </div>
     </section>
     <!------------ CARDS ------------->
     <!-- Kartın default olarak siyah gri ap + sol üst köşede Netflix logosu olacak şekilde css yazıldı.-->
-    <section class="cards-section" style="padding-left: 2rem; padding-bottom: 2rem;">
-        <h1 style="padding: 2rem 5rem;">🟥 CARD Designs </h1>
-        
-    <!------------ Basic Card ------------->
-        <div class="card"></div>
+    <h1>🟥 CARD Designs </h1>
+        <section class="cards-section">
+            
+            <br>
+        <!------------ Basic Card ------------->
+            <div class="card"></div>
 
+            <br>
+        <!------------ w/ 'Top 10 Icon' & 'Recently Added' Subtitle ------------->
+            <div class="card">
+                <img src="MovieBlock\icon-top10.svg"> 
+                <span class="subtitle">Recently Added</span>
+            </div>
+            
+            <br>
+
+            <!------------ w/ 'Top 10' Icon only ------------->
+            <div class="card">
+                <img src="MovieBlock\icon-top10.svg"> 
+            </div>
+        
         <br>
-    <!------------ w/ 'Top 10 Icon' & 'Recently Added' Subtitle ------------->
-        <div class="card">
-             <img src="MovieBlock\icon-top10.svg"> 
-            <span class="subtitle">Recently Added</span>
+    <!------------ w/ 'Recently Added' Subtitle only ------------->
+            <div class="card">
+                <span class="subtitle">Recently Added</span>
+            </div>
+        <br>
+        <!------------ w/ '1' + Vertical Cards------------->
+       <div class="vertical-cards"> 
+        <div class="vertical-card-container">
+            <img src="number-1.png">
+            <div class="vertical-card"></div>
         </div>
-        
-        <br>
-
-        <!------------ w/ 'Top 10' Icon only ------------->
-        <div class="card">
-            <img src="MovieBlock\icon-top10.svg"> 
-       </div>
-       
-       <br>
-<!------------ w/ 'Recently Added' Subtitle only ------------->
-        <div class="card">
-           <span class="subtitle">Recently Added</span>
-       </div>
-
-
+<br>
+            <div class="vertical-card-container">
+                <img src="number-1.png">
+                <div class="vertical-card"> <img src="MovieBlock\icon-top10.svg"> <span class="subtitle">Recently Added</span> </div>
+            </div>
+<br>
+            <div class="vertical-card-container">
+                <img src="number-1.png">
+                <div class="vertical-card"> <img src="MovieBlock\icon-top10.svg"> </div>
+            </div>
+<br>
+            <div class="vertical-card-container">
+                <img src="number-1.png">
+                <div class="vertical-card"> <span class="subtitle">Recently Added</span> </div>
+            </div>
+        </div>
+        </section>
     </section>
-
 
 
 
@@ -298,21 +325,28 @@
             background-color: var(--primary-red);
             
         }
-
-        section {
+        .wf-ds {
             background-color: var(--primary-bg-color);
+        
+        }
+        h1, h2 {
+            padding: 3rem 5rem;
+        }
+        section {
             border: 1rem solid var(--primary-red);
+        }
+        section h1 {
+            background-color: var(--primary-red);
             
         }
-       
-
         .main-colors {
             display: flex;
             justify-content: left;
-            margin-bottom: 5rem;
-            padding-left: 5rem;
+            
         }
-        
+        .main-colors h2 {
+            padding: 3rem 0; 
+        }
         .red {
             background-color: var(--primary-red);
             width: 30rem;
@@ -336,8 +370,7 @@
 
         .typography-colors {
             display: flex;
-            margin-bottom: 5rem;
-            padding-left: 5rem;
+            
             }
 
         .typography-colors div:has(p),
@@ -398,8 +431,7 @@
 
         .accent-colors {
             display: flex;
-            margin-bottom: 5rem;
-            padding-left: 5rem;
+            
         }
        
         .blue {
@@ -431,8 +463,6 @@
 
         .bg-colors {
             display: flex;
-            margin-bottom: 5rem;
-            padding-left: 5rem;
         }
         
         .bg-black {
@@ -486,12 +516,33 @@
         }
 
         table td {
-           padding: 2rem  5rem;
+           padding: 2rem 5rem;
+        }
+        
+        .typography table tr td h1 {
+            padding: 0 0;
+        }
+        .typography table tr td h2 {
+            padding: 0 0;
         }
 
         /* ------|         UI & UX       |------*/
-        /* ------|   Buttons styles from style.css   |------*/
-        /* ------|          CARDS         |------*/
+        /* ------|         Buttons       |------*/
+        /* ------|          Cards        |------*/
+        .main-colors,
+        .typography-colors,
+        .accent-colors,
+        .bg-colors,
+        .buttons,
+        .cards-section {
+            padding-left: 5rem;
+            padding-bottom: 5rem;
+        }
+        .vertical-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
         
     </style>
   </body>
