@@ -51,6 +51,9 @@ body {
   padding-bottom: 1.5rem;
   padding-top: 2rem;
  }
+ .wf-ds h1, h2 {
+  padding-left: 5rem;
+ }
 /* ----- TYPOGRAPHY TABLE -----*/
 h1 {
   font-weight: bold;
@@ -389,7 +392,7 @@ button {
   background-color: var(--typography-gray);
   width: 25rem;
   aspect-ratio: 16/9;
-  background-image: url(./MovieBlock/icon-netflix.png);
+  background-image: url(public\card-icons\icon-netflix.png);
   background-repeat: no-repeat;
   background-position: 0.7rem 0.7rem;
   background-size: 1.5rem;
@@ -431,7 +434,7 @@ button {
   background-color: var(--typography-gray);
   width: 12.5rem;
   aspect-ratio: 3/4;
-  background-image: url(./MovieBlock/icon-netflix.png);
+  background-image: url(./card-icons/icon-netflix.png);
   background-repeat: no-repeat;
   background-position: 0.4rem 0.4rem;
   background-size: 1rem;
@@ -471,7 +474,7 @@ button {
 
 .users {
   display: flex;
-  margin-right: 4rem;
+  margin-right: 4.5rem;
 }
 .user {
   text-align: center;
@@ -504,9 +507,36 @@ scale: 90%;
   color: var(--typography-white);
   }
   
-  .add-profile:hover {
-      color: var(--typography-white);
-  }
+.add-profile:hover {
+  color: var(--typography-white);
+
+}
+
+.home-page {
+  background: linear-gradient(to top, #ffffff00, #000000f1);
+  padding: 2rem 5rem 0 5rem;
+}
+
+.home-page a {
+  text-decoration: none;
+  color: var(--typography-white);
+}
+
+.bg {
+  background-image: url(public\main-page\hero-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  aspect-ratio: 16/9;
+}
+
+nav {
+  align-items: center;
+}
+
+#main-logo {
+  margin-right: 3rem;
+}
+/*background: linear-gradient(to top, #ffffff00, #0000004f, #000000ab, #000000e7);
 
 /*
 a {
