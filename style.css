@@ -157,7 +157,7 @@ button {
 
 .card {
   background-color: var(--typography-gray);
-  max-width: 25rem;
+  width: 25rem;
   aspect-ratio: 16/9;
   background-image: url(./MovieBlock/icon-netflix.png);
   background-repeat: no-repeat;
@@ -191,6 +191,8 @@ button {
   border-top-right-radius: 0.3rem;
   padding: 0.2rem 0.5rem;
 }
+
+
 .vertical-card-container {
   display: flex;
   justify-content: center;
@@ -201,8 +203,8 @@ button {
   aspect-ratio: 3/4;
   background-image: url(./MovieBlock/icon-netflix.png);
   background-repeat: no-repeat;
-  background-position: 0.6rem 0.6rem;
-  background-size: 1.5rem;
+  background-position: 0.4rem 0.4rem;
+  background-size: 1rem;
   margin: 0;
   padding: 0;
   position: relative;

@@ -14,7 +14,6 @@
   <body>
     <!------------ COLOR SYSTEM ------------>
     <!------------ Main Colors ------------->
-    
     <section class="wf-ds">
         <section class="color-system">
             <h1>🌈COLOR SYSTEM<span style="display: inline-block; transform: rotateY(180deg);">🌈</span></h1>
@@ -89,7 +88,7 @@
         </div>
 <!------------ Background Colors ------------->
         <div>
-            <h2>Background Color</h2>
+            <h2>Background Colors</h2>
             <div class="bg-colors">
                 <div class="bg-black"> 
                     <p style="background-color: var(--typography-white); 
@@ -109,10 +108,11 @@
 
     <section class="typography">
         <h1 style>🔤TYPOGRAPHY</h1>
+        <p style="padding: 5rem 13.5rem;">Typeface: Signika <br>
+            Source: https://fonts.google.com/specimen/Signika </p>
+
         <table>
-            <p style="padding: 5rem 20rem;">Typeface: Signika <br>
-             Source: https://fonts.google.com/specimen/Signika </p>
-           
+            
             <tr>
                 <td>Type Style</td>
                 <td>Font Weight</td>
@@ -237,67 +237,71 @@
 <!------------ BUTTONS ------------->
 <h1>🧑🏻‍💻UI & UX Components</h1>
     <section class="buttons">
-        <div>
-            <br>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+            <button class="primary-button"> <img src="icon-play.svg">Primary Button</button>
+            <button class="secondary-button"> <img src="icon-info.svg">Secondary Button</button>
+            <button class="exceptional-button">Exceptional Button</button>
+            <button>Non-Class Button</button>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 1rem;" >
             <button class="primary-button"> <img src="icon-play.svg">Play</button>
-            <br>
             <button class="secondary-button"> <img src="icon-info.svg">More info</button>
-            <br>
             <button class="exceptional-button">Service Code</button>
-            <button>class verilmemiş buton; css yazmadım aralara br attım, bunun üstünde br yok</button>
+            <button>Any button without class</button>
         </div>
     </section>
     <!------------ CARDS ------------->
     <!-- Kartın default olarak siyah gri ap + sol üst köşede Netflix logosu olacak şekilde css yazıldı.-->
     <h1>🟥 CARD Designs </h1>
         <section class="cards-section">
+            <br>
+            <div class="main-cards">
+            <!------------ Basic Card ------------->
+                <div class="card"></div>
+
+                <br>
+            <!------------ w/ 'Top 10 Icon' & 'Recently Added' Subtitle ------------->
+                <div class="card">
+                    <img src="MovieBlock\icon-top10.svg"> 
+                    <span class="subtitle">Recently Added</span>
+                </div>
+                
+                <br>
+
+                <!------------ w/ 'Top 10' Icon only ------------->
+                <div class="card">
+                    <img src="MovieBlock\icon-top10.svg"> 
+                </div>
             
             <br>
-        <!------------ Basic Card ------------->
-            <div class="card"></div>
-
-            <br>
-        <!------------ w/ 'Top 10 Icon' & 'Recently Added' Subtitle ------------->
-            <div class="card">
-                <img src="MovieBlock\icon-top10.svg"> 
-                <span class="subtitle">Recently Added</span>
-            </div>
-            
-            <br>
-
-            <!------------ w/ 'Top 10' Icon only ------------->
-            <div class="card">
-                <img src="MovieBlock\icon-top10.svg"> 
-            </div>
-        
-        <br>
-    <!------------ w/ 'Recently Added' Subtitle only ------------->
-            <div class="card">
-                <span class="subtitle">Recently Added</span>
-            </div>
-        <br>
-        <!------------ w/ '1' + Vertical Cards------------->
-       <div class="vertical-cards"> 
-        <div class="vertical-card-container">
-            <img src="number-1.png">
-            <div class="vertical-card"></div>
-        </div>
-<br>
+        <!------------ w/ 'Recently Added' Subtitle only ------------->
+                <div class="card">
+                    <span class="subtitle">Recently Added</span>
+                </div>
+            </div>    
+            <br><br>
+            <!------------ w/ '1' + Vertical Cards------------->
+        <div class="vertical-cards"> 
             <div class="vertical-card-container">
                 <img src="number-1.png">
-                <div class="vertical-card"> <img src="MovieBlock\icon-top10.svg"> <span class="subtitle">Recently Added</span> </div>
+                <div class="vertical-card"></div>
             </div>
-<br>
-            <div class="vertical-card-container">
-                <img src="number-1.png">
-                <div class="vertical-card"> <img src="MovieBlock\icon-top10.svg"> </div>
+    <br>
+                <div class="vertical-card-container">
+                    <img src="number-1.png">
+                    <div class="vertical-card"> <img src="MovieBlock\icon-top10.svg"> <span class="subtitle">Recently Added</span> </div>
+                </div>
+    <br>
+                <div class="vertical-card-container">
+                    <img src="number-1.png">
+                    <div class="vertical-card"> <img src="MovieBlock\icon-top10.svg"> </div>
+                </div>
+    <br>
+                <div class="vertical-card-container">
+                    <img src="number-1.png">
+                    <div class="vertical-card"> <span class="subtitle">Recently Added</span> </div>
+                </div>
             </div>
-<br>
-            <div class="vertical-card-container">
-                <img src="number-1.png">
-                <div class="vertical-card"> <span class="subtitle">Recently Added</span> </div>
-            </div>
-        </div>
         </section>
     </section>
 
@@ -327,7 +331,7 @@
         }
         .wf-ds {
             background-color: var(--primary-bg-color);
-        
+           
         }
         h1, h2 {
             padding: 3rem 5rem;
@@ -537,6 +541,20 @@
         .cards-section {
             padding-left: 5rem;
             padding-bottom: 5rem;
+           
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .main-cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            margin-top: 1rem;
+            margin-right: 5rem;
         }
         .vertical-cards {
             display: flex;
@@ -544,6 +562,7 @@
             gap: 2rem;
         }
         
+
     </style>
   </body>
 </html>
