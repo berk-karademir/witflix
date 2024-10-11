@@ -43,6 +43,15 @@ body {
   background-color: var(--primary-bg-color);
   color:var(--typography-white);
 }
+
+ h1 {
+  background-color: var(--primary-red);
+ }
+ h1, h2 {
+  padding-left: 5rem;
+  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+ }
 /* ----- TYPOGRAPHY TABLE -----*/
 h1 {
   font-weight: bold;
@@ -108,6 +117,228 @@ h3 {
   line-height: normal;
   letter-spacing: normal;
 }
+/* ------|   COLOR SYSTEM  |------*/
+/* ------|   Main colors   |------*/
+section {
+  border: 1rem solid var(--primary-red);
+}
+.main-colors {
+  display: flex;
+  
+}
+.main-colors h2 {
+  padding: 3rem 0; 
+}
+.red {
+  background-color: var(--primary-red);
+  width: 30rem;
+  height: 15rem;
+  padding-top: 6.5rem;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.black {
+  border: 1px solid var(--typography-white);
+  width: 30rem;
+  height: 15rem;
+  padding-top: 6.5rem;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+
+/* ------|   Typography colors   |------*/
+
+.typography-colors {
+  display: flex;
+  
+  }
+
+.typography-colors div:has(p),
+.accent-colors div:has(p),
+.bg-colors div:has(p) {                            
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.white {
+  background-color: var(--typography-white);
+  color: var(--primary-bg-color);
+  width: 10rem;
+  height: 10rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  
+  
+}
+
+.gray {
+  background-color: var(--typography-gray);
+  color: var(--primary-bg-color);
+  width: 10rem;
+  height: 10rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: end;
+  
+}
+
+.l-gray {
+  background-color: var(--typography-light-gray);
+  color: var(--primary-bg-color);
+  width: 10rem;
+  height: 10rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: end;
+}
+
+.lt-gray {
+  background-color: var(--typography-lightest-gray);
+  color: var(--primary-bg-color);
+  width: 10rem;
+  height: 10rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-left: 1rem;
+  display: flex;
+  align-items: end;
+}
+
+/* ------|   Accent colors   |------*/
+
+.accent-colors {
+  display: flex;
+  
+}
+
+.blue {
+  background-color: var(--accent-blue);
+  color: var(--typography-white);
+  width: 10rem;
+  height: 10rem;
+  margin-right: 5rem;
+  
+}
+
+.orange {
+  background-color: var(--accent-orange);
+  color: var(--typography-white);
+  width: 10rem;
+  height: 10rem;
+  margin-right: 5rem;
+}
+
+.green {
+  background-color: var(--accent-green);
+  color: var(--typography-white);
+  width: 10rem;
+  height: 10rem;
+
+}
+
+/* ------|   Background colors   |------*/
+
+.bg-colors {
+  display: flex;
+}
+
+.bg-black {
+  background-color: var(--primary-bg-color);
+  color: var(--typography-white);
+  width: 10rem;
+  height: 10rem;
+  border: 1px solid var(--typography-white);
+  margin-right: 5rem;
+}
+
+.bg-foggy-black {
+  background-color: var(--secondary-bg-color);
+  color: var(--typography-white);
+  width: 10rem;
+  height: 10rem;
+  padding-left: 1rem;
+  display: flex;
+  align-items: end;
+  
+}
+
+
+/* ------|   Typography Table  |------*/
+
+.typography {
+  background-color: var(--primary-bg-color);
+  border: 1rem solid var(--primary-red);
+  
+}
+
+table {
+  border-spacing: 0;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table tr:nth-child(2n) {
+  background-color: var(--secondary-bg-color);
+  
+}
+
+table td:nth-child(n+2) {
+  text-align: center;
+}
+
+table tr:nth-last-child(-n+3) {
+  opacity: 0.2;
+}
+
+table td {
+ padding: 2rem 5rem;
+}
+
+.typography table tr td h1 {
+  padding: 0 0;
+}
+.typography table tr td h2 {
+  padding: 0 0;
+}
+
+/* ------|         UI & UX       |------*/
+/* ------|         Buttons       |------*/
+/* ------|          Cards        |------*/
+.main-colors,
+.typography-colors,
+.accent-colors,
+.bg-colors,
+.buttons,
+.cards-section {
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+ 
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 2rem 0;
+}
+.main-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-right: 5rem;
+}
+.vertical-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+} 
 
 /*--------- BUTTONS -------*/
 .primary-button,
@@ -227,22 +458,35 @@ button {
   padding: 0.2rem 0.5rem;
 }
 
+/*  --------   Who's watching?   -------- */
 .who-is-watching {
+  border: none;
+  min-height: 100vh;
+  min-width: 100vw;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  text-align: center;
-  color: var(--typography-light-gray);
+  
 }
 
+.users {
+  display: flex;
+  justify-content: center;
+}
 .user {
+  text-align: center;
   padding: 0 1rem;
-  border-radius: 1rem;
-  
 }
 
 .user img {
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.users:has(span){ 
+  color: var(--typography-lightest-gray);
+  background-color: var();
 }
 
 .add-profile {
@@ -253,9 +497,16 @@ button {
   padding: 0 1rem;
 }
 .add-profile img {
-  margin-top: 2.5rem;
+  margin:auto
 }
-
+.user:hover{
+  scale: 120%;
+  transition: ease-in 150ms;
+  color: var(--typography-white);
+  }
+  .add-profile:hover {
+      color: var(--typography-white);
+  }
 
 /*
 a {
