@@ -226,6 +226,37 @@ button {
   border-top-right-radius: 0.3rem;
   padding: 0.2rem 0.5rem;
 }
+
+.who-is-watching {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: var(--typography-light-gray);
+}
+
+.user {
+  padding: 0 1rem;
+  border-radius: 1rem;
+  
+}
+
+.user img {
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.add-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+.add-profile img {
+  margin-top: 2.5rem;
+}
+
+
 /*
 a {
   font-weight: 500;
