@@ -22,7 +22,7 @@
   --accent-orange: #FFA00A;
   --accent-green: #5FA53F;
   --secondary-bg-color: #222222;
-  --border-radius: 0.4rem;
+  --button-border-radius: 0.4rem;
 }
 /*
 .signika-<uniquifier> {
@@ -83,7 +83,7 @@ h3 {
 
 .subtitle {
   font-weight:500;
-  font-size: 19px;
+  font-size: 1rem;
   line-height: normal;
   letter-spacing: 0.5%;
 }
@@ -116,10 +116,10 @@ button {
   letter-spacing: 0.1%;
   background-color:var(--typography-white);
   color: var(--primary-bg-color);
-  border-radius: var(--border-radius);
+  border-radius: var(--button-border-radius);
   display: flex;
   gap: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   border: none;
   align-items: center;
 }
@@ -129,7 +129,7 @@ button {
   color:var(--typography-white);
 }
 
-.service-code-button {
+.exceptional-button {
   font-size: 1rem;
   background:transparent;
   border-radius: 0;
@@ -139,7 +139,7 @@ button {
 
 .primary-button:hover,
 .secondary-button:hover,
-.service-code-button:hover {
+.exceptional-button:hover {
   scale: 120%;
   transition: ease-in 150ms;
 }
@@ -148,9 +148,49 @@ button {
   background-color: var(--typography-lightest-gray);
 }
 
-.service-code-button:hover {
+.exceptional-button:hover {
   border: 1px solid var(--typography-white);
   color: var(--typography-white);
+}
+
+/*--------- CARDS -------*/
+.cards-section {
+ 
+}
+.card {
+  background-color: var(--typography-gray);
+  max-width: 25rem;
+  aspect-ratio: 16/9;
+  border-top-right-radius: 5px;
+  background-image: url(./MovieBlock/icon-netflix.png);
+  background-repeat: no-repeat;
+  background-position: 0.7rem 0.7rem;
+  background-size: 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; 
+}
+
+.card  img {
+ position: absolute;
+ top: 0;
+ right: 0;
+ height: 3rem;
+}
+
+
+.card div {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.card span {
+  background-color: var(--primary-red);
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
+  padding: 0.2rem 0.5rem;
 }
 
 

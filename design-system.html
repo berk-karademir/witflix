@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300..700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!------------ COLOR SYSTEM ------------>
+    <!------------ Main Colors ------------->
     <h1 style="padding: 2rem 5rem;">🌈COLOR SYSTEM<span style="display: inline-block; transform: rotateY(180deg);">🌈</span></h1>
     <section class="color-system">
         <div class="main-colors">
@@ -25,7 +27,7 @@
                 <div class="black">Black</div>
             </div>
         </div>
-
+<!------------ Typography Colors ------------->
         <div>
             <h2 style="margin-bottom: 2rem; padding-left: 5rem;">Typography Colors</h2>
             <div class="typography-colors">
@@ -45,7 +47,7 @@
                 <div class="lt-gray"> Ltest. Gray <br> #999999</div>
             </div>
         </div>
-
+<!------------ Accent Colors ------------->
         <div>
             <h2 style="margin-bottom: 2rem; padding-left: 5rem;">Accent Colors</h2>
             <div class="accent-colors">
@@ -83,7 +85,7 @@
                 </div>
             </div>
         </div>
-
+<!------------ Background Colors ------------->
         <div>
             <h2 style="margin-bottom: 2rem; padding-left: 5rem;">Background Color</h2>
             <div class="bg-colors">
@@ -104,7 +106,6 @@
 <!------------ TYPOGRAPHY TABLE ------------->
     <h1 style="padding: 2rem 5rem;">🔤TYPOGRAPHY</h1>
     <section class="typography">
-        
         
         <table>
             <p style="padding: 5rem 10rem;">Typeface: Signika <br>
@@ -143,7 +144,7 @@
             </tr>
 
             <tr>
-                <td class="primary-button">Primary Button - Netflix</td>
+                
                 <td>Regular</td>
                 <td>1.2rem</td>
                 <td>Auto</td>
@@ -151,7 +152,23 @@
             </tr>
 
             <tr>
-                <td class="secondary-button">Secondary Button - Netflix &nbsp;</td>
+                <td><button class="primary-button">Primary Button - Netflix</button></td>
+                <td>Regular</td>
+                <td>16px</td>
+                <td>Auto</td>
+                <td>0%</td>
+            </tr>
+
+            <tr>
+                <td><button class="secondary-button">Secondary Button - Netflix</button></td>
+                <td>Regular</td>
+                <td>16px</td>
+                <td>Auto</td>
+                <td>0%</td>
+            </tr>
+
+            <tr>
+                <td><button class="exceptional-button">Exceptional Button - Netflix</button></td>
                 <td>Regular</td>
                 <td>16px</td>
                 <td>Auto</td>
@@ -215,22 +232,53 @@
             </tr>
         </table>
     </section>
-
+<!------------ BUTTONS ------------->
     <section style="padding-left: 2rem; padding-bottom: 2rem;">
         <h1 style="padding: 2rem 5rem;">🧑🏻‍💻UI & UX Components</h1>
-
-        
-            
-            <button class="primary-button"> <img src="public\icon-play.svg">Play</button>
+            <button class="primary-button"> <img src="icon-play.svg">Play</button>
             <br>
-            <button class="secondary-button"> <img src="public\icon-info.svg">More info</button>
+            <button class="secondary-button"> <img src="icon-info.svg">More info</button>
             <br>
-            <button class="service-code-button">Service Code</button>
-        
-    
+            <button class="exceptional-button">Service Code</button>
+            <button>class verilmemiş buton; css yazmadım aralara br attım, bunun üstünde br yok</button>
     </section>
+    <!------------ CARDS ------------->
+    <!-- Kartın default olarak siyah gri ap + sol üst köşede Netflix logosu olacak şekilde css yazıldı.-->
+    <section class="cards-section" style="padding-left: 2rem; padding-bottom: 2rem;">
+        <h1 style="padding: 2rem 5rem;">🟥 CARD Designs </h1>
+        
+    <!------------ Basic Card ------------->
+        <div class="card"></div>
+
+        <br>
+    <!------------ w/ 'Top 10 Icon' & 'Recently Added' Subtitle ------------->
+        <div class="card">
+             <img src="MovieBlock\icon-top10.svg"> 
+            <span class="subtitle">Recently Added</span>
+        </div>
+        
+        <br>
+
+        <!------------ w/ 'Top 10' Icon only ------------->
+        <div class="card">
+            <img src="MovieBlock\icon-top10.svg"> 
+       </div>
+       
+       <br>
+<!------------ w/ 'Recently Added' Subtitle only ------------->
+        <div class="card">
+           <span class="subtitle">Recently Added</span>
+       </div>
+
+
+    </section>
+
+
+
+
+    <!-----------  <style>  ------------>
     <style>
-    /* kesen eksende hizalı => section'u sil bunu yapıştır  !!!!!!!!!!
+    /* kesen eksende hizalı => section'u sil bunu yapıştır paşa keyfin isterse !!!!!!!!!!
 
         section {
             background-color: var(--primary-bg-color);
@@ -345,9 +393,9 @@
             display: flex;
             align-items: end;
         }
-
-
+        
 /* ------|   Accent colors   |------*/
+
         .accent-colors {
             display: flex;
             margin-bottom: 5rem;
@@ -380,6 +428,7 @@
         }
         
 /* ------|   Background colors   |------*/
+
         .bg-colors {
             display: flex;
             margin-bottom: 5rem;
@@ -408,6 +457,7 @@
 
 
 /* ------|   Typography Table  |------*/
+
         .typography {
             background-color: var(--primary-bg-color);
             border: 1rem solid var(--primary-red);
@@ -439,38 +489,10 @@
            padding: 2rem  5rem;
         }
 
-        /* ------|   UI & UX   |------*/
-        /* ------|   Buttons   |------*/
-        /*.buttons {
-            margin-left: 5rem;
-            padding: 2rem 0;
-        }
-
-        .play-button {
-            border-radius: 0.4rem;
-            height: 4rem;
-            width: 10rem;
-            
-        }
-
-        .info-button{
-            border-radius: 0.4rem;
-            height: 4rem;
-            width: 12rem;
-            background-color: var(--typography-gray);
-            color: var(--typography-white);
-            display: flex;
-           
-        }
-
-        .service-code-button {
-            height: 4rem;
-            width: 12rem;
-            background-color: var(--primary-bg-color);
-            color: var(--typography-lightest-gray);
-            border: 1px solid var(--typography-lightest-gray);
-            
-        } */
+        /* ------|         UI & UX       |------*/
+        /* ------|   Buttons styles from style.css   |------*/
+        /* ------|          CARDS         |------*/
+        
     </style>
   </body>
 </html>
