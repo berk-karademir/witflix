@@ -48,7 +48,6 @@ body {
   background-color: var(--primary-red);
  }
  h1, h2 {
-  padding-left: 5rem;
   padding-bottom: 1.5rem;
   padding-top: 2rem;
  }
@@ -472,38 +471,39 @@ button {
 
 .users {
   display: flex;
-  justify-content: center;
+  margin-right: 4rem;
 }
 .user {
   text-align: center;
-  padding: 0 1rem;
 }
 
 .user img {
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
+  border-radius: 0.3rem;
+  margin: auto 1rem;
 }
 
 .users:has(span){ 
-  color: var(--typography-lightest-gray);
-  background-color: var();
+  color: var(--typography-light-gray);
 }
 
 .add-profile {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
+  text-align: center;
 }
+
 .add-profile img {
-  margin:auto
+margin: auto;
+scale: 90%;
 }
+
 .user:hover{
   scale: 120%;
   transition: ease-in 150ms;
   color: var(--typography-white);
   }
+  
   .add-profile:hover {
       color: var(--typography-white);
   }
