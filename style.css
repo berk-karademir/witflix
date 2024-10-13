@@ -485,6 +485,12 @@ button {
   text-align: center;
 }
 
+.user  a {
+  text-decoration: none;
+  color: var(--typography-light-gray);
+  
+}
+
 .user img {
   border-radius: 0.3rem;
   margin: auto 1rem;
@@ -505,12 +511,13 @@ button {
 margin: auto;
 scale: 90%;
 }
-
-.user:hover{
+.user:hover,
+.user a:hover {
   scale: 120%;
   transition: ease-in 150ms;
   color: var(--typography-white);
-  }
+}
+
   
 .add-profile:hover {
   color: var(--typography-white);
@@ -586,7 +593,17 @@ nav {
   display: none; /* Tarayıcı kaydırma çubuğunu gizlemek için */
 }
 
+.main-page-footer {
+  color: #E50914;
+  margin-top: 30rem;
+  display: flex;
+  align-items:center;
+  justify-content: space-evenly;
+}
 
+.main-page-footer a {
+  color: var(--typography-gray);
+}
 
 
 
