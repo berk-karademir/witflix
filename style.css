@@ -389,6 +389,7 @@ button {
 /*--------- CARDS -------*/
 
 .card {
+  scroll-snap-align: center;
   background-color: var(--typography-gray);
   width: 25rem;
   aspect-ratio: 16/9;
@@ -400,6 +401,7 @@ button {
   display: flex;
   align-items: flex-end;
   justify-content: center; 
+  flex-shrink: 0;
 }
 
 .card img {
@@ -429,7 +431,9 @@ button {
 .vertical-card-container {
   display: flex;
   justify-content: center;
+  flex-shrink: 0;
 }
+
 .vertical-card {
   background-color: var(--typography-gray);
   width: 12.5rem;
@@ -443,7 +447,8 @@ button {
   position: relative;
   display: flex;
   align-items: flex-end;
-  justify-content: center; 
+  justify-content: center;
+  flex-shrink: 0;
 }
 .vertical-card img {
   position: absolute;
@@ -512,21 +517,46 @@ scale: 90%;
 
 }
 
-.home-page {
-  background: linear-gradient(to top, #ffffff00, #000000f1);
+/* ----------  MAIN PAGE ------------*/
+.bg {
+  background-image: url(public/main-page/hero-bg.png);
+  background-repeat: no-repeat;
+  background-size:auto;
+  background-color: #0e0d0d;
+
+}
+
+.hero > div > p {
+  max-width: 800px;
+}
+ .bg section {
+  border: none;
+ }
+.bg h1,h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.home-page > :not(header) {
   padding: 2rem 5rem 0 5rem;
 }
+
 
 .home-page a {
   text-decoration: none;
   color: var(--typography-white);
+  
 }
 
-.bg {
-  background-image: url(public\main-page\hero-bg.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  aspect-ratio: 16/9;
+.wf-header {
+  background: linear-gradient(to top, #ffffff00, #0000004f, #000000cc, #000000);
+  padding: 2rem 5rem 0 5rem;
+}
+
+.nav-bar {
+  display: flex; 
+  justify-content: space-between;
+  
 }
 
 nav {
@@ -536,6 +566,40 @@ nav {
 #main-logo {
   margin-right: 3rem;
 }
+
+.hero {
+  margin: 10rem 0 10rem 0;
+}
+
+
+.shows h2 {
+  margin: 3rem 0 1rem 0;
+}
+
+.movie-container {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+.movie-container::-webkit-scrollbar {
+  display: none; /* Tarayıcı kaydırma çubuğunu gizlemek için */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*background: linear-gradient(to top, #ffffff00, #0000004f, #000000ab, #000000e7);
 
 /*
