@@ -393,7 +393,7 @@ button {
   background-color: var(--typography-gray);
   width: 25rem;
   aspect-ratio: 16/9;
-  background-image: url(public\card-icons\icon-netflix.png);
+  background-image: url(./images/icon-netflix.png);
   background-repeat: no-repeat;
   background-position: 0.7rem 0.7rem;
   background-size: 1.5rem;
@@ -438,7 +438,7 @@ button {
   background-color: var(--typography-gray);
   width: 12.5rem;
   aspect-ratio: 3/4;
-  background-image: url(./card-icons/icon-netflix.png);
+  background-image: url(./images/icon-netflix.png);
   background-repeat: no-repeat;
   background-position: 0.4rem 0.4rem;
   background-size: 1rem;
@@ -526,7 +526,7 @@ scale: 90%;
 
 /* ----------  MAIN PAGE ------------*/
 .bg {
-  background-image: url(public/main-page/hero-bg.png);
+  background-image: url(images/hero-bg.png);
   background-repeat: no-repeat;
   background-size:auto;
   background-color: #0e0d0d;
